@@ -1,0 +1,24 @@
+1--> types: Users are three types
+	a) USER
+	b) EMPLOYEE
+	c) MANAGER
+2-->ACCESSIBILITY:
+	MANAGER
+	    -> Manager can only edit product(change price,image)-but can not change the product code. Also mangaer can
+		delete the product from database.
+	    -> Manager can only create product.
+	    -> Manger can view order list and order details.
+  	    -> Manager can view own profile
+
+	EMPLOYEE
+		-> Employee can view order list and order details.
+		-> Employee can view own profile
+	USER
+		-> User can see product details page. 
+		-> User can register self.
+		-> User can see cart details page.
+		-> To submit order, user need to register self before any order.
+3--> DEPENDENCY:
+		-> You must change the code for full path when you want to save the images in action of add product 
+		   in database.ProductDaoImpl.java
+

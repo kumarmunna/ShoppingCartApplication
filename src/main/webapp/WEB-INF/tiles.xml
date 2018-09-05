@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="/WEB-INF/views/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/menu1.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/footer.jsp" />
+	</definition>
+
+	<definition name="Login" extends="base.definition">
+		<put-attribute name="title" value="User Login" />
+		<put-attribute name="body" value="/WEB-INF/views/Login.jsp" />
+	</definition>
+
+	<definition name="ProductList" extends="base.definition">
+		<put-attribute name="title" value="Product List" />
+		<put-attribute name="body" value="/WEB-INF/views/ProductList.jsp" />
+	</definition>
+	
+	<definition name="home" extends="base.definition">
+		<put-attribute name="title" value="Home" />
+		<put-attribute name="body" value="/WEB-INF/views/home.jsp" />
+	</definition>
+	
+	<definition name="addProducts" extends="base.definition">
+		<put-attribute name="title" value="Add Product" />
+		<put-attribute name="body" value="/WEB-INF/views/addProducts.jsp" />
+	</definition>
+	
+	<definition name="EditProduct" extends="base.definition">
+		<put-attribute name="title" value="Edit Product" />
+		<put-attribute name="body" value="/WEB-INF/views/EditProduct.jsp" />
+	</definition>
+	
+	<definition name="UserRegistration" extends="base.definition">
+		<put-attribute name="title" value="User Resgistration" />
+		<put-attribute name="body" value="/WEB-INF/views/UserRegistration.jsp" />
+	</definition>
+	
+	<definition name="OrderConfirmation" extends="base.definition">
+		<put-attribute name="title" value="Order Confirmation" />
+		<put-attribute name="body" value="/WEB-INF/views/OrderConfirmation.jsp" />
+	</definition>
+	
+	<definition name="register" extends="base.definition">
+		<put-attribute name="title" value="User Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/register.jsp" />
+	</definition>
+	
+	<definition name="CartPage" extends="base.definition">
+		<put-attribute name="title" value="User Cart Page " />
+		<put-attribute name="body" value="/WEB-INF/views/CartPage.jsp" />
+	</definition>
+	
+	<definition name="UserProfile" extends="base.definition">
+		<put-attribute name="title" value="User Profile" />
+		<put-attribute name="body" value="/WEB-INF/views/UserProfile.jsp" />
+	</definition>
+	
+	<definition name="OrderList" extends="base.definition">
+		<put-attribute name="title" value="Order List" />
+		<put-attribute name="body" value="/WEB-INF/views/OrderList.jsp" />
+	</definition>
+	
+	<definition name="OrderDetailList" extends="base.definition">
+		<put-attribute name="title" value="Order Details " />
+		<put-attribute name="body" value="/WEB-INF/views/OrderDetailList.jsp" />
+	</definition>
+	<definition name="admin" extends="base.definition">
+		<put-attribute name="title" value="Admin User " />
+		<put-attribute name="body" value="/WEB-INF/views/admin.jsp" />
+	</definition>
+	<definition name="customLoginForm" extends="base.definition">
+		<put-attribute name="title" value="User Login" />
+		<put-attribute name="body" value="/WEB-INF/views/customLoginForm.jsp" />
+	</definition>
+	<definition name="403" extends="base.definition">
+		<put-attribute name="title" value="Access Denied " />
+		<put-attribute name="body" value="/WEB-INF/views/errors/403.jsp" />
+	</definition>
+	<definition name="ExceptionHandling" extends="base.definition">
+		<put-attribute name="title" value="Exception Handler " />
+		<put-attribute name="body" value="/WEB-INF/views/errors/ExceptionHandling.jsp" />
+	</definition>
+	<definition name="generic_error" extends="base.definition">
+		<put-attribute name="title" value="Exception Handler " />
+		<put-attribute name="body" value="/WEB-INF/views/errors/generic_error.jsp" />
+	</definition>
+	<definition name="notfound" extends="base.definition">
+		<put-attribute name="title" value="Resource not found" />
+		<put-attribute name="body" value="/WEB-INF/views/errors/notfound.jsp" />
+	</definition>
+</tiles-definitions>  
